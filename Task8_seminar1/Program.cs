@@ -7,6 +7,7 @@
 Console.WriteLine("Введите число: ");
 string Number = Console.ReadLine() ?? "";
 int n = Convert.ToInt32(Number);
+n = Math.Abs(n);
 
 for (int i = 2; i <= n; i = (i + 2))
 {
