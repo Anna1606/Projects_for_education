@@ -32,14 +32,12 @@ int[] GetFewNumbers(int number)
 {
     number = Math.Abs(number);
     int[] result = new int[number];
-    int i = 0;
     int newNumber = 0;
 
-    while (number > i)
+    for (int i = 0; number > i; i++)
     {
         newNumber = GetNumber("Введите число");
         result[i] = newNumber;
-        i++;
     }
     return result;
 }
